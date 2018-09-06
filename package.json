@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "matsuhisa",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.5.0"
+  }
 }
