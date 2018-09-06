@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "matsuhisa",
   "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.2",
