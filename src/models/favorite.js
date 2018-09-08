@@ -4,6 +4,6 @@ export class Favorite {
   }
 
   greet() {
-    console.log(`こんにちは。 ${this.name} です`);
+    return `こんにちは。 ${this.name} です`
   }
 }
