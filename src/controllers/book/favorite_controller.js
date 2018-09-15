@@ -9,6 +9,11 @@ export default class extends Controller {
   // }
 
   greet(event) {
+    const elements = document.querySelectorAll('[data-book-id]');
+    console.log(elements);
+    // elements.forEach((element, index) => {
+    //   console.log(element);
+    // })
     // console.log("はい！", this.favoriteTargets);
     // const element = event.currentTarget.getAttribute("data-book-id")
     const element = event.currentTarget
