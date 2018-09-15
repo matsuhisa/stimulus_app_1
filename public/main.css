@@ -1,0 +1,24 @@
+* {
+  font-size: 100%;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.book {
+  border: 1px solid #e7e7e7;
+  padding: 0.4em;
+  margin-bottom: 2em;
+}
+
+.favorite {
+  display: inline-block;
+  border: 1px solid #e7e7e7;
+  border-radius: 1em;
+  padding: 0.4em;
+  color: #e7e7e7;
+}
+
+.favorite.active {
+  color: red;
+}

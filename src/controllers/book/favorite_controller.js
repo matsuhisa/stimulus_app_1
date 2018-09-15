@@ -2,7 +2,17 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
 
-  connect() {
-    console.log("Hello, Stimulus!", this.element);
+  static targets = [ "favorite" ]
+
+  // connect() {
+  //   console.log("Hello, Stimulus!", this.element);
+  // }
+
+  greet(event) {
+    // console.log("はい！", this.favoriteTargets);
+    // const element = event.currentTarget.getAttribute("data-book-id")
+    const element = event.currentTarget
+    element.classList.toggle("active")
+    // console.log("はい！", element);
   }
 }
