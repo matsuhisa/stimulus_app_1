@@ -9,15 +9,28 @@ export default class extends Controller {
   // }
 
   greet(event) {
+    this.load()
     const elements = document.querySelectorAll('[data-book-id]');
-    console.log(elements);
-    // elements.forEach((element, index) => {
-    //   console.log(element);
-    // })
+
+    elements.forEach((element, index) => {
+      console.log(element.getAttribute("data-book-id"));
+    })
     // console.log("はい！", this.favoriteTargets);
     // const element = event.currentTarget.getAttribute("data-book-id")
     const element = event.currentTarget
+    console.log("ID:", element.getAttribute("data-book-id"));
     element.classList.toggle("active")
     // console.log("はい！", element);
   }
+
+  load() {
+    fetch("https://qiita.com/api/v2/items?page=1&per_page=10")
+      .then(response => response.json())
+      .then((response) => {
+        response.forEach((record, index) => {
+          console.log(index);
+        })
+      })
+  }
+
 }
