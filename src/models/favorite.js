@@ -1,4 +1,5 @@
 export class Favorite {
+  var foo = "foo"
   constructor(name) {
     this.name = name;
   }
