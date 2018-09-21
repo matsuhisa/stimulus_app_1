@@ -1,3 +1,7 @@
 linter:
   eslint:
     npm_install: true
+    dir: src/
+    options:
+      config: '.eslintrc'
+      ext: 'js'
