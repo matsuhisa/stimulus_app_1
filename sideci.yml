@@ -3,5 +3,5 @@ linter:
     npm_install: true
     dir: src/
     options:
-      config: '.eslintrc'
+      config: '.eslintrc.json'
       ext: 'js'
