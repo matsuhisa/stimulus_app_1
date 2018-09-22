@@ -22,10 +22,5 @@
             "error",
             "double"
         ]
-        /* ,
-        "semi": [
-            "error",
-            "always"
-        ] */
     }
 }
