@@ -1,10 +1,9 @@
-export class Favorite {
-  var foo = "foo"
+export default class Favorite {
   constructor(name) {
     this.name = name;
   }
 
   greet() {
-    return `こんにちは。 ${this.name} です`
+    return `こんにちは。 ${this.name} です`;
   }
 }

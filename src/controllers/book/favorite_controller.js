@@ -4,22 +4,12 @@ export default class extends Controller {
 
   static targets = [ "favorite" ]
 
-  // connect() {
-  //   console.log("Hello, Stimulus!", this.element);
-  // }
-
   greet(event) {
-    // const elements = document.querySelectorAll('[data-book-id]');
-    // elements.forEach((element, index) => {
-    //   console.log(element.getAttribute("data-book-id"));
-    // })
-
     const element = event.currentTarget
     this.toogle(element)
   }
 
   toogle(element) {
-    // console.log("ID:", element.getAttribute("data-book-id"));
     this.load(() => {
       element.classList.toggle("active")
     })
