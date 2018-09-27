@@ -1,6 +1,10 @@
-export default class Favorite {
+export default class {
   constructor(name) {
     this.name = name;
+  }
+
+  static foo() {
+    console.log("favorite");
   }
 
   greet() {
