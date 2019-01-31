@@ -22,3 +22,31 @@
 .favorite.active {
   color: red;
 }
+
+.anime-box {
+  position: relative;
+  border: 1px solid red;
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  display: block;
+}
+
+.anime {
+  position: absolute;
+  border: 1px solid blue;
+  top: 300px;
+  left: 0;
+  transition: all 2s;
+  opacity: 0;
+}
+
+.anime.-fade-in {
+  top: 0;
+  opacity: 1;
+}
+
+/* .anime.-fade-in {
+  background-color: #333;
+  opacity: 1;
+} */
